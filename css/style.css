@@ -1,0 +1,626 @@
+/* body
+{
+    overflow: hidden;
+} */
+/* #loading
+{
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-color: rgb(24, 78, 78);
+    z-index: 3;
+} */
+/* Navbar */
+.navbar 
+{
+    padding-left: 5rem;
+    padding-right: 5rem;
+    padding-top: 1.5rem;
+    font-weight: 600;
+}
+.navbar a
+{
+    color: #fff;
+    transition: 0.5s;
+}
+.navbar a:hover
+{
+    color: tomato;
+}
+.navbar-brand 
+{
+    font-size: 1.6rem !important;
+    padding-left: 3rem !important;
+}
+.navbar li
+{
+    padding-left: 15px;
+    color: #fff;
+    font-size: 1.1rem ;
+}
+.navbar-nav  li .active a
+{
+    color: tomato !important;
+    border-bottom: solid 4px #fff;
+}
+#main-nav
+{
+    transition: background-color 2s , padding 2s;
+}
+a:hover
+{
+    color: tomato !important;
+}
+
+/* Header */
+header
+{
+    background-image: url(../images/header.jpg);
+    background-size: cover;
+    background-position:center center;
+    background-attachment: fixed;
+}
+.layer
+{
+    background-color: rgba(0, 0,0, 0.6);
+    height: 100%;
+}
+.setting
+{
+    background-color: rgb(56, 55, 55);
+    font-size: 2rem;
+    padding: 0.5rem;
+    position: fixed;
+    top: 10rem;
+    left: 0%;
+}
+.head-caption h1
+{
+    font-weight: 600;
+    font-size: 4.5rem;
+    padding-top: 3rem;
+}
+.head-caption p
+{
+    font-weight: 400;
+    font-size: 2.5rem;
+    padding-top: 1.5rem;
+}
+.scroll
+{
+    width: 1.5rem;
+    height: 2.5rem;
+    border: solid 2px #fff;
+    position: absolute;
+    bottom: 10%;
+    left: 50%;
+    animation-name: scroll;
+    animation-duration: 2s;
+    animation-timing-function: initial;
+    animation-iteration-count: infinite;
+}
+.scroll::after
+{
+    content: "";
+    width: 4px;
+    height: 7px;
+    background-color: #fff;
+    position: absolute;
+    bottom: 10px;
+    left: 8px;
+}
+@keyframes scroll
+{
+    0%{bottom: 20px;}
+    25%{bottom: 40px;}
+    50%{bottom: 60px;}
+    75%{bottom: 80px;}
+    100%{bottom: 20px;}
+}
+
+
+
+/* section1 about */
+.about 
+{
+    background-color: rgb(228, 222, 222);
+}
+.about .w-85
+{
+    width: 78%;
+}
+.about .container
+{
+    padding-bottom: 4rem;
+}
+.about .row .container-fluid
+{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 3rem;
+    margin-bottom: 1rem;
+}
+.about img
+{
+    max-width: 100%;
+    height: auto;
+    
+}
+.about-inf .title
+{
+   font-weight: 600;
+    color: #1e1e1e;
+    font-size: 1.1rem;
+}
+.progress
+{
+    background-color: #b0cae9;
+
+}
+.progr h2
+{
+    font-weight: 600;
+    color: #1e1e1e;
+    font-size: 1.1rem;
+}
+.progr span
+{
+    color: #4e4e4e;
+    font-size: 1rem;
+}
+.skll1
+{
+    position: absolute;
+    top: 0.5rem;
+}
+.skll2
+{
+    position: absolute;
+    top: 0.5rem;
+}
+.skll3
+{
+    position: absolute;
+    top: 0.5rem;
+}
+.skll4
+{
+    position: absolute;
+    top: 0.5rem;
+}
+.h1
+{
+    padding-top: 3rem;
+    color: #1e1e1e;
+    
+    position: relative;
+}
+.h1::before
+{
+    content: "";
+    background-color: #0078ff;
+    width: 8rem;
+    height: 3px;
+    position: absolute;
+    top: 100%;
+    left: 0;
+
+}
+.lead p
+{
+    font-size: 1.25rem;
+    font-weight: 300;
+    padding: 0.25rem;
+} 
+
+
+/* section2 services*/
+.service-head h2
+{
+    font-size: 3rem;
+    font-weight: bold;
+    color: #1e1e1e;
+}
+.service-head p
+{
+    font-size: 1rem;
+    color: #4e4e4e;
+    position: relative;
+}
+.service-head p::before
+{
+    content: "";
+    background-color: #0078ff;
+    width: 40px;
+    height: 4px;
+    position: absolute;
+    top: 120%;
+    right: 48%;
+}
+
+
+/* section3 services */
+.service
+{
+    background-color: rgb(228, 222, 222);
+}
+.service-item
+{
+    background-color:#fff; 
+    color: #1e1e1e;
+    border-radius: 10px;
+    margin-bottom: 3rem;
+    padding-bottom: 2rem;
+}
+.service-icons
+{
+    padding-top: 4rem;
+    padding-bottom: 1rem;
+}
+.service-icons i
+{
+    font-size: 4rem;
+    border: solid 10px #0078ff;
+    border-radius: 50%;
+    padding: 20px;
+    transition: 0.2s;
+}
+
+.service-item:hover i
+{
+   color: #fff;
+   background-color:  #0078ff;
+   border-color: #bcd3eb;
+   
+}
+
+
+/* section3 */
+.sction3
+{
+    background-image: url(../images/s3.jpg);
+    background-size: cover;
+    background-position:center center;
+    background-attachment: fixed;
+    height: 60vh;
+
+}
+.sction3 .layer
+{
+    background-color: rgba(8, 127, 255, 0.6);
+    height: 100%;
+}
+.sction3-item
+{
+    padding: 4rem;
+}
+.sction3-icons
+{
+    padding-top: 4rem;
+    padding-bottom: 1rem;
+}
+.sction3-icons i
+{
+    font-size: 2rem;
+    border: solid 10px #c3d8f1;
+    color: #fff;
+    border-radius: 50%;
+    padding: 16px;
+}
+.sction3-num
+{
+    font-size: 2rem;
+    font-weight: 400;
+    color: #fff;
+}
+.sction3 p
+{
+    font-size: 1rem;
+    font-weight: 400;
+    color: #fff;
+    text-align: center;
+}
+
+
+/* section4 PORTFOLIO */
+.sction4 h2
+{
+    font-size: 3rem ;
+    font-weight: bold;
+    color: #1e1e1e;
+    margin-bottom: 0.5rem;
+}
+.sction4 .title
+{
+    font-size: 1rem;
+    color: #4e4e4e;
+    position: relative;
+}
+.sction4 .title::after
+{
+    content: "";
+    width: 45px;
+    height: 4px;
+    background-color: #0078ff;
+    position: absolute;
+    top: 120%;
+    right: 48%;
+}
+.sction4 h3
+{
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: #1e1e1e;
+    margin-top: 1.5rem;
+    padding-left: 1rem;
+}
+.sction4 .p1
+{
+    color: #0078ff;
+}
+.sction4 .p2
+{
+    color: #4e4e4e;
+}
+.sction4 i
+{
+    position: absolute;
+    bottom: 1.5rem;
+    right: 0.5rem;
+    font-size: 2.5rem !important;
+    border: solid 1px #0078ff;
+    border-radius: 50%;
+    color: #0078ff;
+}
+
+.sction4-img
+{
+    overflow: hidden;
+}
+.sction4-item img
+{
+    transition: all 1s;
+}
+.sction4-item:hover img
+{
+    transform: scale(1.2,1.2);
+}
+
+
+/* section5 ccarousel*/
+.carousel
+{
+    background-image: url(../images/c.jpg);
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+    height: 100vh;
+}
+.carousel .layer
+{
+    background-color: rgba(8, 127, 255, 0.6);
+    height: 100%;
+}
+.carousel h6
+{
+    font-size: 1.4rem;
+    color: #fff;
+    font-weight: 600;
+}
+.carousel .lead
+{
+    color: #fff;
+    font-size: 1.25rem;
+    font-weight: 300;
+}
+.carousel i
+{
+    font-size: 2rem;
+    border-radius: 50%;
+    padding: 11px;
+    background-color: #fff;
+    color: #0078ff;
+}
+.carousel ol
+{
+    position: absolute;
+    bottom: 5rem;
+}
+
+
+
+/* section6 BLOG*/
+.section6
+{
+    margin-top: 5rem;
+}
+.blog-heading h2
+{
+    font-size: 3rem;
+    font-weight: bold;
+    color: #1e1e1e;
+}
+.blog-heading > p
+{
+    color: #1e1e1e;
+    position: relative;
+}
+.blog-heading > p::after
+{
+    content: "";
+    width: 45px;
+    height: 4px;
+    background-color: #0078ff;
+    position: absolute;
+    top: 125%;
+    right: 48%;
+
+}
+.section6 .w-85
+{
+    width: 85%;
+    margin: auto;
+}
+.travel
+{
+    width: 4rem;
+    height: 1.9rem;
+    font-size: 1rem;
+    position: absolute;
+    top: 44%;
+    right: 43%;
+    background-color: #0078ff;
+    color: #fff;
+    z-index: 1;
+    text-align: center;
+    border-radius: 5px;
+}
+.web
+{
+    width: 7rem;
+    height: 1.9rem;
+    font-size: 1rem;
+    position: absolute;
+    top: 44%;
+    right: 36%;
+    background-color: #0078ff;
+    color: #fff;
+    z-index: 1;
+    text-align: center;
+    border-radius: 5px;
+
+}
+.card-footer .w-15
+{
+    width: 12%;
+}
+.section6 .icon
+{
+    position: absolute;
+    right: 1rem;
+    bottom: 1.5rem;
+    color: black;
+}
+.card-footer .h6
+{
+    color: #1e1e1e;
+    padding-left: 0.5rem;
+
+}
+
+
+
+/* section7 contact us */
+.sction7
+{
+    background-image: url(../images/c.jpg);
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+    height: 130vh;
+}
+.sction7 .layer
+{
+    height: 100%;
+    background-color: rgba(8, 127, 255, 0.6);
+}
+.sction7 .form
+{
+    padding-top: 6rem;
+}
+.sction7 .w-85
+{
+    width: 85%;
+}
+.sction7 h2::before
+{
+    content: "";
+    background-color: #0078ff;
+    width: 6rem;
+    height: 3px;
+    position: absolute;
+    left: 0;
+    top: 120%;
+
+}
+.sction7 input
+{
+    width: 100%;
+    border: solid 1px #ced4da;
+    padding: 10px;
+    margin-top: 1rem;
+    background: #fff;
+    font-size: 14px;
+    color: #495057
+}
+.sction7 textarea
+{
+    background: #fff;
+    border: solid 1px #ced4da;
+    height: 8rem;
+    margin-top: 1rem;
+}
+
+.sction7 button
+{
+    width: 10.4rem;
+    height: 3rem;
+    font-size: 1.1rem;
+    margin-top: 2rem;
+    margin-bottom: 3rem;
+    background-color: #0078ff;
+    color: #fff;
+    border-radius: 40px;
+}
+.sction7 .h2::before
+{
+    content: "";
+    width: 6rem;
+    height: 3px;
+    background-color: #0078ff;
+    position: absolute;
+    left: 0;
+    top: 120%;
+
+}
+.sction7 .lead
+{
+    font-size: 1.25rem;
+    font-weight: 300;
+    margin-bottom: 1rem;
+    color: #4e4e4e;
+}
+.sction7 .contact i
+{
+    color: #0078ff;
+    padding-right: 0.5rem;
+}
+.contact-icon
+{
+    background-color: #fff;
+    color: #1e1e1e;
+    border-radius: 50%;
+    border: solid 4px #0078ff;
+    padding: 10px;
+    margin-right: 1rem;
+    font-size: 1.7rem;
+    transition: 0.5s;
+}
+.contact-icon:hover 
+{
+    color: #fff;
+    background-color: #0078ff;
+    border-color: #b9b1b1;
+}
+
+
+/* footer */
+.footer
+{
+    background-color: #0078ff;
+    color: #fff;
+    height: 20vh;
+    
+}
